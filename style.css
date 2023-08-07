@@ -1,0 +1,66 @@
+:root {
+    --color-theme-green: rgb(49, 123, 49);
+    --color-theme-blue: rgb(53, 111, 203);
+    --color-theme-red: rgb(201, 45, 45);
+    --color-theme-light: rgb(190, 190, 190);
+    --color-theme-white: rgb(238, 238, 238);
+    --color-theme-dark: rgb(60, 60, 60);
+    --color-theme-darker: rgb(29, 29, 29);
+    --color-theme-bg-logo: rgb(0, 0, 0, 0.6);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* --------------------- Styles ----------------------*/
+.left-container {
+    width: max(30%, 300px);
+    height: 100vh;
+    background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.left-container div.logo-box {
+    width: 100%;
+    height: 120px;
+    background-color: var(--color-theme-bg-logo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-container div.logo-box img {
+    height: 90%;
+}
+
+.left-container div.logo-box h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    color: var(--color-theme-white);
+}
+
+.left-container p.img-credits {
+    color: var(--color-theme-light);
+    align-self: flex-end;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.right-container {
+    width: max(70%, 600px);
+    background-color: var(--color-theme-light);
+}

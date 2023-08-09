@@ -2,8 +2,8 @@
     --color-theme-green: rgb(49, 123, 49);
     --color-theme-blue: rgb(53, 111, 203);
     --color-theme-red: rgb(201, 45, 45);
-    --color-theme-light: rgb(190, 190, 190);
-    --color-theme-white: rgb(238, 238, 238);
+    --color-theme-light: rgb(213, 213, 213);
+    --color-theme-white: rgb(248, 248, 248);
     --color-theme-dark: rgb(60, 60, 60);
     --color-theme-darker: rgb(29, 29, 29);
     --color-theme-bg-logo: rgb(0, 0, 0, 0.6);
@@ -17,13 +17,19 @@
 
 body {
     display: flex;
-    flex-wrap: wrap;
+    font-family: "Roboto";
+    background-color: var(--color-theme-white);
+}
+
+@font-face {
+    font-family: Norse;
+    src: url(Norse-Bold.otf);
 }
 
 /* --------------------- Styles ----------------------*/
 .left-container {
-    width: max(30%, 300px);
-    height: 100vh;
+    width: max(40%, 300px);
+    height: max(100vh, 600px);
     background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -35,7 +41,7 @@ body {
 
 .left-container div.logo-box {
     width: 100%;
-    height: 120px;
+    height: 150px;
     background-color: var(--color-theme-bg-logo);
     display: flex;
     justify-content: center;
@@ -47,8 +53,10 @@ body {
 }
 
 .left-container div.logo-box h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 3rem;
+    font-family: Norse, "Franklin Gothic Medium", "Arial Narrow", Arial,
+        sans-serif;
+    font-weight: lighter;
+    font-size: 5rem;
     color: var(--color-theme-white);
 }
 
@@ -60,7 +68,43 @@ body {
     padding-bottom: 1rem;
 }
 
-.right-container {
-    width: max(70%, 600px);
-    background-color: var(--color-theme-light);
+.left-container p.img-credits a {
+    color: var(--color-theme-light);
+    text-decoration: none;
 }
+
+/*------------------------------------------------------------*/
+
+.right-container {
+    width: max(50%, 600px);
+}
+
+.right-container div.disclaimer {
+    padding: 0 3rem;
+    height: max(40%, 200px);
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.right-container div.disclaimer p.text-disclaimer {
+    font-size: 1.2rem;
+    
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.right-container form.form-container {
+    padding: 2rem 3rem;
+    height: max(60%, 300px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* box-shadow: 0 -1px 5px var(--color-theme-light) inset; */
+    border: 1px solid black;
+}
+
+/*----------------------Form--------------------------*/
+

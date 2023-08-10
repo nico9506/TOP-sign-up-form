@@ -160,7 +160,6 @@ label {
 label.input-required::after {
     content: " *";
     color: var(--color-theme-red);
-    font-size: 1rem;
 }
 
 input {
@@ -174,7 +173,7 @@ input {
 input:user-invalid {
     background-color: var(--color-theme-light);
     border: 1px solid var(--color-theme-red);
-  }
+}
 
 .right-container form.form-container div.bottom-container input.submit-btn {
     width: 12rem;
@@ -205,4 +204,26 @@ input:user-invalid {
     color: var(--color-theme-green);
     font-weight: bold;
     text-decoration: none;
+}
+
+/*-------------------Footer----------------------*/
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;
+    background-color: var(--color-theme-darker);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 3rem;
+}
+
+footer a {
+    color: var(--color-theme-light);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-shadow: 0 0 2px var(--color-theme-blue);
 }

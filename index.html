@@ -12,6 +12,13 @@
             href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
             rel="stylesheet"
         />
+
+        <script
+            src="https://kit.fontawesome.com/8b9c8ab9d4.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     </head>
     <body>
         <div class="left-container">
@@ -37,12 +44,14 @@
                 <p class="text-disclaimer">You <em>know</em> you want to.</p>
             </div>
 
-            <form action="" method="post" class="form-container">
+            <form action="javascript:void(0);" method="post" class="form-container">
                 <h2>Let's do this!</h2>
 
                 <div class="input-container">
                     <div class="input-fields-left">
-                        <label class="input-required" for="first-name">first name</label>
+                        <label class="input-required" for="first-name"
+                            >first name</label
+                        >
                         <input
                             type="text"
                             name="first-name"
@@ -51,16 +60,13 @@
                             min="1"
                             required
                         />
-    
+
                         <label class="input-required" for="email">email</label>
-                        <input
-                            type="email"
-                            name="email"
-                            id="email"
-                            required
-                        />
-    
-                        <label class="input-required" for="password">password</label>
+                        <input type="email" name="email" id="email" required />
+
+                        <label class="input-required" for="password"
+                            >password</label
+                        >
                         <input
                             type="password"
                             name="password"
@@ -71,7 +77,9 @@
                         />
                     </div>
                     <div class="input-fields-right">
-                        <label class="input-required" for="last-name">last name</label>
+                        <label class="input-required" for="last-name"
+                            >last name</label
+                        >
                         <input
                             type="text"
                             name="last-name"
@@ -89,7 +97,9 @@
                             min="10000"
                             title="Must be a number of 6 to 12 digits"
                         />
-                        <label class="input-required" for="cpassword">confirm password</label>
+                        <label class="input-required" for="cpassword"
+                            >confirm password</label
+                        >
                         <input
                             type="password"
                             name="cpassword"
@@ -102,13 +112,21 @@
                 </div>
 
                 <div class="bottom-container">
-                    <input class="submit-btn" type="submit" value="Create account" />
+                    <input
+                        class="submit-btn"
+                        type="submit"
+                        value="Create account"
+                    />
                     <p class="create-acc">
                         Already have an account? <a href="index.html">Log in</a>
                     </p>
                 </div>
             </form>
+            <footer>
+                <a href="https://github.com/nico9506" target="_blank"
+                    ><i class="fa-brands fa-github"></i> nico9506</a
+                >
+            </footer>
         </div>
-
     </body>
 </html>

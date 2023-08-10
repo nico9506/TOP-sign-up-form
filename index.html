@@ -42,7 +42,7 @@
 
                 <div class="input-container">
                     <div class="input-fields-left">
-                        <label for="first-name">first name</label>
+                        <label class="input-required" for="first-name">first name</label>
                         <input
                             type="text"
                             name="first-name"
@@ -52,7 +52,7 @@
                             required
                         />
     
-                        <label for="email">email</label>
+                        <label class="input-required" for="email">email</label>
                         <input
                             type="email"
                             name="email"
@@ -60,7 +60,7 @@
                             required
                         />
     
-                        <label for="password">password</label>
+                        <label class="input-required" for="password">password</label>
                         <input
                             type="password"
                             name="password"
@@ -71,7 +71,7 @@
                         />
                     </div>
                     <div class="input-fields-right">
-                        <label for="last-name">last name</label>
+                        <label class="input-required" for="last-name">last name</label>
                         <input
                             type="text"
                             name="last-name"
@@ -85,10 +85,11 @@
                             type="number"
                             name="phone-number"
                             id="phone-number"
-                            max="15"
-                            min="6"
+                            max="999999999999"
+                            min="10000"
+                            title="Must be a number of 6 to 12 digits"
                         />
-                        <label for="cpassword">confirm password</label>
+                        <label class="input-required" for="cpassword">confirm password</label>
                         <input
                             type="password"
                             name="cpassword"

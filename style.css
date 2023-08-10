@@ -2,7 +2,7 @@
     --color-theme-green: rgb(69, 106, 69);
     --color-theme-blue: rgb(53, 111, 203);
     --color-theme-red: rgb(201, 45, 45);
-    --color-theme-light: rgb(240, 240, 240);
+    --color-theme-light: rgb(243, 243, 243);
     --color-theme-border: rgb(216, 216, 216);
     --color-theme-white: rgb(248, 248, 248);
     --color-theme-dark: rgb(60, 60, 60);
@@ -127,7 +127,7 @@ body {
     align-self: flex-start;
 }
 
-.right-container form.form-container div.input-container    div.input-fields-left,
+.right-container form.form-container div.input-container div.input-fields-left,
 .right-container
     form.form-container
     div.input-container
@@ -157,6 +157,12 @@ label {
     letter-spacing: 1px;
 }
 
+label.input-required::after {
+    content: " *";
+    color: var(--color-theme-red);
+    font-size: 1rem;
+}
+
 input {
     width: 14rem;
     height: 1.5rem;
@@ -165,10 +171,15 @@ input {
     border-radius: 3px;
 }
 
+input:user-invalid {
+    background-color: var(--color-theme-light);
+    border: 1px solid var(--color-theme-red);
+  }
+
 .right-container form.form-container div.bottom-container input.submit-btn {
     width: 12rem;
     height: 2rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1rem;
     text-transform: capitalize;
     color: var(--color-theme-white);
@@ -177,13 +188,21 @@ input {
     margin-bottom: 1rem;
 }
 
+.right-container
+    form.form-container
+    div.bottom-container
+    input.submit-btn:hover {
+    text-shadow: 0 0 1px var(--color-theme-white);
+    cursor: pointer;
+}
+
 .right-container form.form-container div.bottom-container p.create-acc {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 0.8rem;
 }
 
 .right-container form.form-container div.bottom-container p.create-acc a {
     color: var(--color-theme-green);
-    font-weight: bold;  
+    font-weight: bold;
     text-decoration: none;
 }
